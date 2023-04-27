@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="icon" href="./Megamind_files/Logo.png" type="image/x-icon">
+</head>
+
+<h2>
+	<ul class="tagcolor" style="color:mediumblue">
+	  <li class="tagcolor" style="color:mediumblue"><a class="attributecolor" style="color:red" href="./News.html" style="color:mediumblue"="news.asp"="tagcolor" style="color:mediumblue">News</a class="tagcolor" style="color:mediumblue"></li class="tagcolor" style="color:mediumblue">
+	  <li class="tagcolor" style="color:mediumblue"><a class="attributecolor" style="color:red" href="Contacts.html" style="color:mediumblue"="contact.asp"="tagcolor" style="color:mediumblue">Contact</a class="tagcolor" style="color:mediumblue"></li class="tagcolor" style="color:mediumblue">
+    <li class="tagcolor" style="color:mediumblue"><a class="attributecolor" style="color:red" href="./index.html" style="color:mediumblue"="default.asp"="tagcolor" style="color:mediumblue">Home</a class="tagcolor" style="color:mediumblue"></li class="tagcolor" style="color:mediumblue">
+	  </ul class="tagcolor" style="color:mediumblue">
+	</h2>
+
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin San', sans-serif ;
+    box-sizing: border-box;
+  }
+
+  .about img{
+    height: auto;
+    width: 420px;
+  }
+  .about-text{
+    width: 550px;
+  }
+  .main{
+    width: 95%;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+  }
+   .about-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+   }
+   .about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+   }
+  span{
+    color: rgba(46, 3, 201, 0.486);
+  }
+  .about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 45px;
+  }
+  button{
+    background-color:rgba(16, 4, 59, 0.486);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  button:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+  }
+  
+  .those{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+.revolver{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.revolver span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--1)*45deg)) translateZ(350px);
+}
+
+.revolver span img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-position: top;
+    object-fit: cover;
+    transition: 2s;
+}
+.revolver span:hover img{
+    transform: translateY(-50px) scale(1.4);
+}
+@media screen and (max-width:600px) {
+    .main{
+      display: block;
+      margin-top: 60px;
+    }
+    .about-text{
+    width: 70%;
+    margin-left: 35px;
+  }
+  .revolver{
+    overflow-x: hidden;
+  }
+  }
+</style>
+<link rel="stylesheet" href="./Megamind_files/mega.css">
+<body>
+  <section class="about">
+    <div class="main">
+      <img src="./Megamind_files/Boaz.jpg">
+      <div class="about-text">
+        <h1>About Me</h1>
+        <h5>developer<span> & designer</span></h5>
+        <p>
+          Nothing makes more sense to me than web development and programming. I am Olubakin Boaz. I am a front web developer and a programmer. I make website more interactive with web animations. 
+          I started web development because I have the desire to change the thinking of the world and reduce the disadvantage of computers. I also make responsible design, fliers, business card. Basically, I'm into graphic design and somethings in programing. Programing is life, so I welcome you to the world of programming and web development. I am MEGA MIND, I'm going to blow your MIND.
+        </p>
+        <button type="button"><a href="./Contacts.html">Let's Talk</a></button>
+      </div>
+    </div>
+  </section>
+  <div class="those">
+  <div class="revolver">
+    <span style="--1:1;"><img src="./Megamind_files/A.jpg" alt=""></span>
+    <span style="--1:2;"><img src="./Megamind_files/B.jpg" alt=""></span>
+    <span style="--1:3;"><img src="./Megamind_files/C.JPG" alt=""></span>
+    <span style="--1:4;"><img src="./Megamind_files/D.JPG" alt=""></span>
+    <span style="--1:5;"><img src="./img/portfolio-6.jpeg" alt=""></span>
+    <span style="--1:6;"><img src="./Megamind_files/bo.jpg" alt=""></span>
+    <span style="--1:7;"><img src="./Megamind_files/enoch.jpg" alt=""></span>
+    <span style="--1:8;"><img src="./Megamind_files/soilder.jpg" alt=""></span>
+</div>
+</div>
+</body>
+<hgroup>
+  <table style="width:90%">
+    <tr>
+      <td>
+        <i>
+          <h2>
+            MISSION
+          </h2>
+        </i>
+      </td>
+      <td>
+        <i>
+          <H2>
+            ABOUT
+          </H2>
+        </i>
+      </td>
+      <td>
+        <i>
+          <h2>
+            CONTACT
+          </h2>
+        </i>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>
+          Building people with a positive mind set.
+        </p>
+      </td>
+      <td>
+        This website was built by a young boy, with the love of computers. He desire
+        <P>
+          to change the thinking of the world and reduce the disadvantages of computers.
+        </P>
+        <p>
+          <a href="About.html">
+            Read More
+          </a>
+        </p>
+      </td>
+      <td>
+        <div class="wrapper">
+          <a href="https://www.facebook.com/profile.php?id=100051175212302" class="icon facebook">
+            <div class="tooltip">Facebook</div>
+            <span><i class="fab fa-facebook-f"></i></span>
+            <img src="./Megamind_files/icons8-facebook-48.png" style="height: 45px;">
+          </a>
+          <a href="https://twitter.com/Mega0mind" class="icon Phone">
+            <div class="tooltip">Tweeter</div>
+            <span><i class="fab fa-Phone"></i></span>
+            <img src="./Megamind_files/tweeter.png" style="height: 45px;">
+          </a>
+          <a href="https://www.instagram.com/mastersrh" class="icon instagram">
+            <div class="tooltip">Instagram</div>
+            <span><i class="fab fa-instagram"></i></span>
+            <img src="./Megamind_files/icons8-instagram-48.png" style="height: 45px;">
+          </a>
+          <a href="https://www.youtube.com/@Megamind-0" class="icon youtube">
+            <div class="tooltip">Youtube</div>
+            <span><i class="fab fa-youtube"></i></span>
+            <img src="./Megamind_files/icons8-youtube-48.png" style="height: 45px;">
+          </a>
+        </div>
+        <a href="./Contacts.html">
+          Read More
+        </a>
+        </p>
+      </td>
+    </tr>
+  </table>
+</hgroup>
+
+<footer>
+  <p align="center">
+    Created by Olubakin BOAZ
+  </p>
+  <p align="center">
+    copyright 2022
+  </p>
+</footer>
+</html>
